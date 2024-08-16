@@ -17,3 +17,7 @@ app.use(fileUpload({
     useTempFiles:true,
 }))
 app.use("/api/v1",User); 
+
+app.get("/",(req,res)=>{
+    res.send("To do App Server Working");
+})
